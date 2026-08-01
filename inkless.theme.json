@@ -18,5 +18,23 @@
     "sharedGlobal": "__INKLESS_SHARED__",
     "hostGlobal": "InklessThemeHost",
     "registerGlobal": "__INKLESS_THEME_REGISTER__"
-  }
+  },
+  "contentSlots": [
+    {
+      "pageKey": "home",
+      "schemaId": "blog-first/home@1",
+      "title": { "zh": "博客首页", "en": "Blog home" },
+      "description": "Optional home overrides; author identity lives in site config; posts from articles API",
+      "schema": "schemas/content/home.schema.json",
+      "mediaRefPaths": ["cover", "hero.media"],
+      "localizedPaths": [
+        "title",
+        "intro",
+        "recentHeading",
+        "hero.title",
+        "hero.subtitle"
+      ],
+      "stringPaths": ["moreHref", "moreLabel"]
+    }
+  ]
 }

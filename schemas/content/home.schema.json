@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "blog-first/home@1",
+  "title": "Blog First Home Content (optional overrides)",
+  "type": "object",
+  "additionalProperties": true,
+  "description": "Optional content_documents.home overrides. Author identity and posts come from site config + articles API. MediaRef leaves must be strings.",
+  "properties": {
+    "title": { "type": ["string", "object"] },
+    "intro": { "type": ["string", "object"] },
+    "recentHeading": { "type": ["string", "object"] },
+    "moreHref": { "type": "string" },
+    "moreLabel": { "type": "string" },
+    "cover": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string" },
+        "alt": { "type": "string" },
+        "caption": { "type": "string" }
+      }
+    },
+    "hero": {
+      "type": "object",
+      "properties": {
+        "title": { "type": ["string", "object"] },
+        "subtitle": { "type": ["string", "object"] },
+        "media": {
+          "type": "object",
+          "properties": {
+            "url": { "type": "string" },
+            "alt": { "type": "string" },
+            "caption": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
